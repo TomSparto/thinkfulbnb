@@ -69,7 +69,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 48px;
   color: #fff;
 }
 
@@ -141,10 +141,13 @@ footer p {
     justify-content: space-between;
     padding: 0 30px;
     align-items: center;
+    flex-wrap: wrap;
   }
   .group {
+    flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
+    align-items: center;
   }
   .form-display {
     flex-direction: column;
@@ -155,5 +158,8 @@ footer p {
   }
   p {
     margin: 10px;
+  }
+  .logo {
+    font-size: 72px;
   }
 }
