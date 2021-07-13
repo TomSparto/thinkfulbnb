@@ -31,10 +31,16 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  max-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* ---  Groups & Items --- */
+
+.test-group {
+  display: flex;
+}
 
 .group {
   display: flex;
@@ -43,11 +49,14 @@ main img {
 
 .item {
   flex: 1;
-  margin: 10px;
 }
 
 .item-double {
   flex: 2;
+}
+
+.form-display {
+  display: flex;
 }
 
 /* -------  Navigation ------- */
@@ -62,6 +71,15 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
 }
 
 header nav ul li {
@@ -117,3 +135,25 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 480px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+  }
+  .group {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .form-display {
+    flex-direction: column;
+  }
+  img {
+    align-items: center;
+    width: 90%;
+  }
+  p {
+    margin: 10px;
+  }
+}
